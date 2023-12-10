@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Vote
@@ -17,8 +17,8 @@ dataSources:
         - Voted
       abis:
         - name: Vote
-          file: ./abis/Vote.json
+          file: Vote\abis\Vote.json
       eventHandlers:
         - event: Voted(string,uint256,uint256)
           handler: handleVoted
-      file: ./src/vote.ts
+      file: Vote\Vote.wasm

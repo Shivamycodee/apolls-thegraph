@@ -1,13 +1,21 @@
 [
   {
     "inputs": [
-      { "internalType": "string", "name": "_votingQuestion", "type": "string" },
+      {
+        "internalType": "string",
+        "name": "_votingQuestion",
+        "type": "string"
+      },
       {
         "internalType": "string[]",
         "name": "proposalDescriptions",
         "type": "string[]"
       },
-      { "internalType": "address", "name": "_verifierAddr", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "_verifierAddr",
+        "type": "address"
+      }
     ],
     "stateMutability": "nonpayable",
     "type": "constructor"
@@ -16,7 +24,7 @@
     "anonymous": false,
     "inputs": [
       {
-       "indexed": false,
+        "indexed": false,
         "internalType": "string",
         "name": "description",
         "type": "string"
@@ -40,14 +48,26 @@
   {
     "inputs": [],
     "name": "anonAadhaarVerifierAddr",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "canPeopleVote",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -66,7 +86,11 @@
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "_votingQuestion", "type": "string" }
+      {
+        "internalType": "string",
+        "name": "_votingQuestion",
+        "type": "string"
+      }
     ],
     "name": "changeVotingQuestion",
     "outputs": [],
@@ -75,10 +99,20 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "_addr", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      }
     ],
     "name": "checkVoted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -88,8 +122,16 @@
     "outputs": [
       {
         "components": [
-          { "internalType": "string", "name": "description", "type": "string" },
-          { "internalType": "uint256", "name": "voteCount", "type": "uint256" }
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "voteCount",
+            "type": "uint256"
+          }
         ],
         "internalType": "struct Vote.Proposal[]",
         "name": "",
@@ -101,12 +143,24 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "proposalIndex", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "proposalIndex",
+        "type": "uint256"
+      }
     ],
     "name": "getProposal",
     "outputs": [
-      { "internalType": "string", "name": "", "type": "string" },
-      { "internalType": "uint256", "name": "", "type": "uint256" }
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -114,37 +168,81 @@
   {
     "inputs": [],
     "name": "getProposalCount",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "getTotalVotes",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "name": "hasVoted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "name": "proposals",
     "outputs": [
-      { "internalType": "string", "name": "description", "type": "string" },
-      { "internalType": "uint256", "name": "voteCount", "type": "uint256" }
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "voteCount",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -177,13 +275,21 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256[2]", "name": "_pA", "type": "uint256[2]" },
+      {
+        "internalType": "uint256[2]",
+        "name": "_pA",
+        "type": "uint256[2]"
+      },
       {
         "internalType": "uint256[2][2]",
         "name": "_pB",
         "type": "uint256[2][2]"
       },
-      { "internalType": "uint256[2]", "name": "_pC", "type": "uint256[2]" },
+      {
+        "internalType": "uint256[2]",
+        "name": "_pC",
+        "type": "uint256[2]"
+      },
       {
         "internalType": "uint256[34]",
         "name": "_pubSignals",
@@ -191,20 +297,38 @@
       }
     ],
     "name": "verify",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "proposalIndex", "type": "uint256" },
-      { "internalType": "uint256[2]", "name": "_pA", "type": "uint256[2]" },
+      {
+        "internalType": "uint256",
+        "name": "proposalIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "_pA",
+        "type": "uint256[2]"
+      },
       {
         "internalType": "uint256[2][2]",
         "name": "_pB",
         "type": "uint256[2][2]"
       },
-      { "internalType": "uint256[2]", "name": "_pC", "type": "uint256[2]" },
+      {
+        "internalType": "uint256[2]",
+        "name": "_pC",
+        "type": "uint256[2]"
+      },
       {
         "internalType": "uint256[34]",
         "name": "_pubSignals",
@@ -219,21 +343,39 @@
   {
     "inputs": [],
     "name": "votingQuestion",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "votingStartTime",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "votingTimeRange",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   }

@@ -1,8 +1,8 @@
 {
   "goerli": {
     "Vote": {
-      "address": "0x42197f7657079a3177bC3e3B3725b58961aF2da0",
-      "startBlock": 10183872
+      "address": "0x9f2598Ef17506Ac6b987a408241f0Dd1033c6dD2",
+      "startBlock": 10184559
     }
   }
 }
